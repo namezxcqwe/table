@@ -46,8 +46,8 @@ var elems = document.getElementsByClassName("dynamic"),
             trampInput.addEventListener("blur", function() {
 				let innerText = trampInput.value;
 				innerText = innerText.replace( /Э/gi, "<img src=\"1.png\">" );
-				innerText = innerText.replace( /К/gi, "<img src=\"2.png\">" );
-				innerText = innerText.replace( /М/gi, "<img src=\"3.png\">" );	
+				innerText = innerText.replace( /К/gi, "<img src=\"3.png\">" );
+				innerText = innerText.replace( /М/gi, "<img src=\"2.png\">" );	
 				innerText = innerText.replace( /Ф/gi, "<img src=\"4.png\">" );				
 				trampInput.parentNode.innerHTML = innerText;
 				istdselect = false;	
@@ -60,8 +60,8 @@ for (var i=0; i<elems.length; i++) {
 		istdselect = true;
 		let innerText = this.innerHTML;
 		innerText = innerText.replace( /<img src=\"1.png\">/gi, "Э" );
-		innerText = innerText.replace( /<img src=\"2.png\">/gi, "К" );
-		innerText = innerText.replace( /<img src=\"3.png\">/gi, "М" );	
+		innerText = innerText.replace( /<img src=\"3.png\">/gi, "К" );
+		innerText = innerText.replace( /<img src=\"2.png\">/gi, "М" );	
 		innerText = innerText.replace( /<img src=\"4.png\">/gi, "Ф" );		
         trampInput.value = innerText;
         this.innerHTML = "";
